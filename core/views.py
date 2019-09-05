@@ -5,7 +5,6 @@ from django.http import HttpResponse
 
 
 def index(request):
-    text =
     context = {
         'title':'Django E-Commerce'
     }

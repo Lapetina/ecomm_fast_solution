@@ -2,7 +2,7 @@
 
 Projeto integrado da Faculdade das Amẽricas (FAM) - 5ª semestre
 
-Diciplinas: 
+Disciplinas: 
 
 - Qualidade de Software;
 - Tecnologia para Internet;

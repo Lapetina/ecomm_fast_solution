@@ -121,8 +121,8 @@ STATIC_URL = '/static/'
 db_from_foo = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_foo)
 
-#Honor the 'X-Forwarded-Proto' header for request.is_secure()
-SECURE_PROXYpSS,_HEADER = ('HTTO_X_FORWARDED_PROTO', 'https')
+
+SECURE_PROXY_SSL_HEADER = ('HTTO_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = ['*']
 

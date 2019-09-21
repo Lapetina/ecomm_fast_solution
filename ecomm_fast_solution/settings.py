@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 import dj_database_url
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -124,8 +123,6 @@ DATABASES['default'].update(db_from_foo)
 
 #Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXYpSS,_HEADER = ('HTTO_X_FORWARDED_PROTO', 'https')
-
-#Allow all host headers
 
 ALLOWED_HOSTS = ['*']
 

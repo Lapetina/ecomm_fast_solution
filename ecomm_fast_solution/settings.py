@@ -117,12 +117,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#Update database configuration with $DATABASE_URL.
 db_from_foo = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_foo)
 
-
-SECURE_PROXY_SSL_HEADER = ('HTTO_X_FORWARDED_PROTO', 'https')
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = ['*']
 

@@ -23,5 +23,5 @@ urlpatterns = [
     path(r'^contato/$', views.contact, name='contact'),
     path(r'^produto/$', views.product, name='product'),
     path(r'^produtos/$', views.product_list, name='product_list'),
-    path('admin/', admin.site.urls),
+    path(r'admin/', admin.site.urls),
 ]

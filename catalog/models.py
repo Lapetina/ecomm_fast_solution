@@ -1,6 +1,8 @@
 # coding=utf-8
 
 from django.db import models
+from django.urls import reverse_lazy
+from django.urls import reverse
 
 
 # Create your models here.
@@ -20,6 +22,10 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return reverse('catalo:category', kwargs={'slug': self.slug})
+
+
 class Product(models.Model):
 
     name = models.CharField('Nome', max_length=100)
@@ -38,3 +44,6 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('catalo:product', kwargs={'slug': self.slug})
